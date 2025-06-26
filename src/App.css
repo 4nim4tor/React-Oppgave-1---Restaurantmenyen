@@ -1,0 +1,169 @@
+:root {
+  --cal-poly-green: hsla(148, 100%, 15%, 1);
+  --office-green: hsla(120, 100%, 20%, 1);
+  --office-green-2: hsla(120, 100%, 22%, 1);
+  --office-green-3: hsla(120, 100%, 25%, 1);
+  --kelly-green: hsla(101, 100%, 35%, 1);
+  --sgbus-green: hsla(90, 100%, 44%, 1);
+  --spring-bud: hsla(83, 88%, 52%, 1);
+  --lime: hsla(75, 100%, 60%, 1);
+  --very-light-mint: hsl(120, 50%, 95%);
+}
+
+/* ========== Moblie Breakpoint (min-width: 350px) ========== */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--very-light-mint);
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px 10px 10px 10px;
+  font-size: 2rem;
+  color: var(--cal-poly-green);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--office-green-3);
+  margin-bottom: 30px;
+}
+
+.menu-list {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 0 15px 30px 15px;
+}
+
+.menu-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--office-green-2);
+}
+
+.menu-list p {
+  margin: 4px 0;
+}
+
+.menu-list strong {
+  background-color: var(--sgbus-green);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.menu-list em {
+  color: var(--office-green-3);
+}
+
+.menu-list div {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("assets/circuit-leaf-pattern.svg"),
+    linear-gradient(135deg, var(--lime), var(--spring-bud));
+  background-size: contain;
+  background-position: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #a8a8a8, #d4d4d4, #a8a8a8) 1;
+  background-blend-mode: overlay;
+}
+
+.menu-list div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--cal-poly-green);
+  color: white;
+  margin-top: 30px;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ========== Tablet Breakpoint (min-width: 700px) ========== */
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+
+  .menu-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 30px 40px 30px;
+  }
+
+  .menu-list h2 {
+    font-size: 1.4rem;
+  }
+
+  .menu-list div {
+    width: 325px;
+    height: 325px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+/* ========== Desktop Breakpoint (min-width: 1100px) ========== */
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+
+  .menu-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 60px 60px 60px;
+  }
+
+  .menu-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu-list div {
+    width: 350px;
+    height: 350px;
+  }
+
+  footer {
+    padding: 25px;
+    font-size: 1rem;
+  }
+}
