@@ -78,6 +78,7 @@ h3 {
   background: url("assets/circuit-leaf-pattern.svg"),
     linear-gradient(135deg, var(--lime), var(--spring-bud));
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
