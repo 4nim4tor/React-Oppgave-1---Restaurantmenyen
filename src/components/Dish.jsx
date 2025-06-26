@@ -7,14 +7,14 @@ export default function Dish({
 }) {
   return (
     <>
-      <h2>
+      <h2 className="michroma-regular">
         🍃 {tittel} - {pris}
       </h2>
-      <p>
+      <p className="tektur-regular">
         <strong>⚙️ {kategori}</strong>
       </p>
-      <p>{beskrivelse}</p>
-      <p>
+      <p className="michroma-regular">{beskrivelse}</p>
+      <p className="tektur-regular">
         <em>{ingredienser}</em>
       </p>
     </>

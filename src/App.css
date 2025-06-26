@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Qwigley&family=Tektur:wght@400..900&display=swap");
+
 :root {
   --cal-poly-green: hsla(148, 100%, 15%, 1);
   --office-green: hsla(120, 100%, 20%, 1);
@@ -8,6 +10,27 @@
   --spring-bud: hsla(83, 88%, 52%, 1);
   --lime: hsla(75, 100%, 60%, 1);
   --very-light-mint: hsl(120, 50%, 95%);
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwigley-regular {
+  font-family: "Qwigley", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+.tektur-regular {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /* ========== Moblie Breakpoint (min-width: 350px) ========== */
@@ -55,6 +78,7 @@ h3 {
 
 .menu-list p {
   margin: 4px 0;
+  font-size: 0.8rem;
 }
 
 .menu-list strong {
@@ -123,6 +147,11 @@ h5 {
     padding: 0 30px 40px 30px;
   }
 
+  .menu-list p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+  }
+
   .menu-list h2 {
     font-size: 1.4rem;
   }
@@ -152,6 +181,11 @@ h5 {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 0 60px 60px 60px;
+  }
+
+  .menu-list p {
+    margin: 4px 0;
+    font-size: 1rem;
   }
 
   .menu-list h2 {

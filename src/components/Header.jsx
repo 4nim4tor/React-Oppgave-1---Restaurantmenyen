@@ -1,10 +1,10 @@
 export default function Header() {
   return (
     <>
-      <h1>
+      <h1 className="tektur-regular">
         <em>🌿Circuit Bytes Bistro</em>
       </h1>
-      <h3>
+      <h3 className="qwigley-regular">
         <em> ⚙️ "Deliciously Debugged Dining!" ⚙️ </em>
         {/* <em> ⚙️ "Rooted in Nature, Wired/ Engineered for Taste." ⚙️ </em>
           <em> ⚙️ "Tasty Enough to Crash Your System." ⚙️ </em>

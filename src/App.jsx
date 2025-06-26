@@ -3,7 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Menu from "./components/Menu.jsx";
-import meny from "./data/many.js";
+import meny from "./data/meny.js";
 
 function App() {
   const kategoriBasedOrder = { Forrett: 1, Hovedrett: 2, Dessert: 3 };
